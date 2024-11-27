@@ -1,4 +1,5 @@
-## printf Fonksiyonu Nedir ve Nasıl Kullanılır?
+## PRİNTF
+Sadece kendi merak ettiklerimi araştırdım..
 
 **printf** fonksiyonu, C programlama dilinde ekrana metin ve değişken değerlerini yazdırmak için kullanılan en temel ve yaygın fonksiyonlardan biridir. Bu fonksiyon sayesinde programınızın çalışması sırasında elde ettiğiniz sonuçları kullanıcıya sunabilir, hata ayıklama süreçlerinizi kolaylaştırabilir ve programınızın daha interaktif olmasını sağlayabilirsiniz.
 
@@ -61,29 +62,6 @@ Kodu kopyala
 - **Field Width:** Belirli bir alan genişliği belirlemek için kullanılır. Örneğin, %10d, bir tam sayıyı en az 10 karakterlik bir alana yazdırır.
 - **Precision:** Ondalıklı sayılarda virgül sonrası basamak sayısını belirtir. Örneğin, %.2f, bir sayıyı virgulden sonra 2 basamakla yazdırır.
 - **Flags:** Çıktının nasıl biçimlendirileceğini belirler. Örneğin, - işareti sol hizalamayı, + işareti ise her zaman işaret göstermeyi sağlar.
-
-**%p**
-
-C dilinde `char *s = "selam";` ifadesi ile bir string tanımlarsınız ve bu stringin ilk karakterinin adresini `s` değişkenine atarsınız. Şimdi, `printf` fonksiyonunda `s`'i ve `&s`'i kullanmanın farklarına bakalım.
-
-### 1. **`s` ve `&s`'in Anlamı**
-
-- **`s`**: `s`, bir `char` türünden işaretçi (pointer) olduğu için, stringin **ilk karakterinin bellek adresini** tutar. Yani, `s` aslında `"selam"` stringinin ilk karakterinin bulunduğu bellek adresini gösterir. Bu adres, `s`'i ekrana yazdırdığınızda, o adresi yazdırır.
-- **`&s`**: `&s`, `s`'in kendisinin (yani işaretçi değişkeninin) bellek adresini ifade eder. `s` bir `char *` türünde bir işaretçi olduğu için, `&s` bir `char **` türünde (işaretçi işaretçisi) olur. Yani, `&s`'i ekrana yazdırdığınızda, `s` işaretçisinin bellek adresini (yani işaretçinin kendisinin bulunduğu adresi) görürsünüz.
-
-### 2. **Örnek Kod:**
-
-```c
-c
-Kodu kopyala
-#include <stdio.h>int main() {
-    char *s = "selam";
-    printf("%p\n", s);  // s'nin işaret ettiği adres (ilk karakterin adresi)
-    printf("%p\n", &s); // s'nin kendisinin adresi (char * işaretçisinin adresi)
-    return 0;
-}
-
-```
 
 ## 1 - Buffer nedir?
 
