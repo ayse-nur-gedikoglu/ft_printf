@@ -6,7 +6,7 @@
 /*   By: agedikog <gedikoglu_27@icloud.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 11:23:31 by agedikog          #+#    #+#             */
-/*   Updated: 2024/11/13 18:09:08 by agedikog         ###   ########.fr       */
+/*   Updated: 2024/11/27 23:35:43 by agedikog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	ft_ptr(unsigned long long ptr)
 	int	i;
 
 	if (!ptr)
-		return (write(1, "0x0", 3));
+		return (write(1, "(nil)", 5));
 	i = 2;
 	ft_putstr("0x");
 	i += ft_smhex(ptr);

@@ -6,7 +6,7 @@
 /*   By: agedikog <gedikoglu_27@icloud.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:39:09 by agedikog          #+#    #+#             */
-/*   Updated: 2024/11/13 18:41:24 by agedikog         ###   ########.fr       */
+/*   Updated: 2024/11/27 23:34:41 by agedikog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,6 @@ int	ft_putunbr(unsigned int nb)
 	int	i;
 
 	i = 0;
-	if (nb == 4294967295)
-	{
-		i += ft_putchar('4');
-		nb = 294967295;
-	}
 	if (nb >= 10)
 	{
 		i += ft_putnbr(nb / 10);
