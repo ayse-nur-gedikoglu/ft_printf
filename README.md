@@ -151,6 +151,7 @@ int main() {
 
 Bu yöntemle, `va_arg` kullanarak argümanları sırayla alabiliriz ve farklı veri türleri için de kullanabiliriz.
 
+
 ### VA-ARG
 
 **type va_arg(va_list ap, type);** (Makro)
@@ -175,6 +176,7 @@ Ayrıca, va_arg makrosu okunan parametrenin ap listesinde yer alan son parametre
 
 Bir sonraki parametrenin değeri geri döndürülür.
 
+
 ### VA-START
 
 **void va_start(va_list ap, parlast);** (Makro)
@@ -192,6 +194,7 @@ Kendisine geçirilen ap parametre değerine bir ilk değer verir. Bu değer va_a
 **Return değeri**
 
 Yok.
+
 
 ### VA-END
 
